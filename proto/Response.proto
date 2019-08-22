@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Sample.Model;
+
+message Response {
+    int32 errCode = 1;
+    string errMsg = 2;
+    map<string, string> data = 3;
+}

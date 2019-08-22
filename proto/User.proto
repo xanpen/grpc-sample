@@ -1,0 +1,16 @@
+syntax = "proto3";
+package Sample.Model;
+
+message User {
+    int64 id = 1;
+    string name = 2;
+    string avatar = 3;
+    string address = 4;
+    map<string, string> ext = 6;
+}
+
+message UserList {
+    repeated User list = 1;
+    int32 page = 2;
+    int32 limit = 10;
+}
