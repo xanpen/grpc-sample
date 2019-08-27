@@ -17,7 +17,7 @@ require_once 'autoload.php';
 $user = new User();
 $user->setId(6596)->setName("wangxp");
 
-$client = new \Sample\Model\GreeterServiceClient('192.168.21.186:50051', [
+$client = new \Sample\Model\GreeterServiceClient('127.0.0.1:50051', [
     'credentials' => \Grpc\ChannelCredentials::createInsecure()
 ]);
 
