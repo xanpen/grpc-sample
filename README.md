@@ -41,6 +41,13 @@ export CGO_ENABLED=0
 
 ```
 
+- golang protobuf插件安装，注意环境变量
+```bash
+go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+
+```
+
+
 - php扩展安装，自行修改php.ini文件
 
 ```bash
