@@ -47,22 +47,43 @@ export CGO_ENABLED=0
 pecl install protobuf
 pecl install grpc
 
+#安装结果查看
+php --ri gprc
+php --ri protobuf
+
 ```
 
 - php gprc库安装
 
 ```bash
 cd tests
-composer require grpc/grpc
-cd ../
+composer install
+cd ..
 
 ``` 
     
 ## 初始化
 
+```bash
+sh ./pb.sh
+ 
+```
 ## 运行
 
+```bash
+go mod tidy
+go run main.go
+
+```
+
 ## 运行单元测试
+```bash
+go test -v client_test.go
+
+```
 
 ## 运行php client
+```bash
+php tests/clinet_test.php 
 
+```
